@@ -1,5 +1,34 @@
-$primary-color: #444;
+@import "config";
+@import "menu";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background: $primary-color;
+  background: #444;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+main {
+  background: linear-gradient(
+      to right,
+      rgba(40, 194, 255, 0.9),
+      rgba(3, 103, 234, 0.9)
+    ),
+    url(../img/background.jpg);
+  height: 100vh;
+  top: 0;
+  color: white;
 }
