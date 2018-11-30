@@ -9,6 +9,7 @@ const navItems = document.querySelectorAll('.nav-item');
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
+menuNav.addEventListener('click', closeMenu);
 
 function toggleMenu() {
     if (!showMenu) {
@@ -30,4 +31,15 @@ function toggleMenu() {
         // Set Menu State 
         showMenu = false;
     }
+}
+
+function closeMenu() {
+    console.log('works');
+
+    menuBtn.classList.remove('close');
+    menu.classList.remove('show');
+    menuNav.classList.remove('show');
+    menuBranding.classList.remove('show');
+    navItems.forEach(item => item.classList.remove('show'));
+
 }
