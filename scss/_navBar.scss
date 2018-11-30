@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
+// Navbar
+.nav-bar {
+  display: float;
+  padding: 1rem;
+
+  .nav-name {
+    float: left;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 17px;
+    font-family: "Bad Script", cursive;
+  }
+  .nav-icons {
+    padding-right: 3.8rem;
+  }
+  .nav-icons > a {
+    float: right;
+    padding: 0.1rem 0.5rem;
+    font-size: 1.4rem;
+  }
+}

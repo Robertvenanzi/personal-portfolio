@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "navBar";
 
 * {
   box-sizing: border-box;
@@ -8,6 +9,9 @@
 body {
   background: #444;
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 a {
@@ -24,11 +28,44 @@ header {
 main {
   background: linear-gradient(
       to right,
-      rgba(40, 194, 255, 0.9),
-      rgba(3, 103, 234, 0.9)
+      rgba(40, 194, 255, 0.95),
+      rgba(3, 103, 234, 0.95)
     ),
     url(../img/background.jpg);
   height: 100vh;
+  width: 100%;
   top: 0;
   color: white;
+  padding-top: 25vh;
+}
+
+h1.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+#home {
+  .qoute {
+    display: block;
+    text-align: center;
+    align-items: center;
+    max-width: 410px;
+    margin: auto;
+  }
+
+  .qoute-text {
+    font-size: 1.8rem;
+  }
+  .author {
+    display: block;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .next {
+    margin-top: 175px;
+  }
 }
