@@ -15,40 +15,45 @@
   </head>
   <body>
     <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+      <div class="nav-bar">
+        <a href="#home" class="nav-name">Robert Venanzi</a>
+        <div class="nav-icons">
+          <a href="/assets/RobertVenanziResume (1).pdf"
+            ><i class="fas fa-file-download"></i> Resume</a
+          >
+          <a href="https://github.com/robertvenanzi"
+            ><i class="fab fa-github"></i
+          ></a>
+
+          <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
+        </div>
       </div>
       <nav class="menu">
         <div class="menu-branding"><div class="portrait"></div></div>
         <ul class="menu-nav">
-          <li class="nav-item"><a href="#home">Home</a></li>
-          <li class="nav-item"><a href="#intro">Intro</a></li>
-          <li class="nav-item"><a href="#work">Work</a></li>
-          <li class="nav-item"><a href="#contact">Contact</a></li>
+          <li class="nav-item nav-link"><a href="#home">Home</a></li>
+          <li class="nav-item nav-link"><a href="#intro">Intro</a></li>
+          <li class="nav-item nav-link"><a href="#work">Work</a></li>
+          <li class="nav-item nav-link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main id="home" class="bg-image over-lay">
-      <div class="navbar">
-        <a href="#homw" class="nav-branding">Robert Venanzi</a>
-      </div>
-      <div class="nav-icons">
-        <a href="https://github.com/robertvenanzi"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="/assets/RobertVenanziResume (1).pdf"
-          ><i class="fas fa-file-download"></i> Resume</a
-        >
-      </div>
-      <h1 class="title">Front End Engineer</h1>
-      <p class="qoute">
-        "Every great developer you know, got there by solving problems they were
-        unqualified to solve until they actually did it."
-        <span class="author">- Patrick McKenzie</span>
-      </p>
-      <a href="#intro"><i class="fas fa-chevron-down fa-3x ele-smooth"></i></a>
+    <main class="bg-image">
+      <section id="home">
+        <h1 class="title">Front End Engineer</h1>
+        <div class="qoute">
+          <p class="qoute-text">
+            "Every great developer you know, got there by solving problems they
+            were unqualified to solve until they actually did it."
+            <span class="author">- Patrick McKenzie</span>
+          </p>
+          <a href="#intro"><i class="fas fa-chevron-down fa-3x next"></i></a>
+        </div>
+      </section>
     </main>
     <section id="intro"></section>
     <div class="about-portrait"></div>
