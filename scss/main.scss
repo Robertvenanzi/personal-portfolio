@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #fff;
+  background: #f4f5f6;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -69,6 +69,7 @@ h1.title {
   .next {
     position: absolute;
     bottom: 0;
+    z-index: 2;
   }
 }
 
@@ -89,7 +90,7 @@ footer {
   width: 100%;
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: darken(#607d8b, 10);
   color: #fff;
   height: 60px;
 
