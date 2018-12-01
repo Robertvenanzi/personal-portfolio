@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: #999;
+$secondary-color: rgba(3, 103, 234, 0.95);
 $show-hero-image: true;
 $hero-image: url(../img/background.jpg);
 
@@ -14,5 +14,5 @@ $hero-image: url(../img/background.jpg);
 }
 
 @mixin easeOut {
-  transition: all0 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }

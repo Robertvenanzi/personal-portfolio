@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #444;
+  background: #fff;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -29,14 +29,13 @@ main {
   background: linear-gradient(
       to right,
       rgba(40, 194, 255, 0.95),
-      rgba(3, 103, 234, 0.95)
+      rgba(3, 103, 234, 0.949)
     ),
-    url(../img/background.jpg);
+    url(../img/background.jpg) no-repeat top;
+  background-size: cover;
   height: 100vh;
   width: 100%;
-  top: 0;
   color: white;
-  padding-top: 25vh;
 }
 
 h1.title {
@@ -44,6 +43,8 @@ h1.title {
   font-weight: 700;
   width: 100%;
   text-align: center;
+  padding-top: 25vh;
+  margin: 0;
 }
 #home {
   .qoute {
@@ -66,6 +67,52 @@ h1.title {
   }
 
   .next {
-    margin-top: 175px;
+    position: absolute;
+    bottom: 0;
   }
+}
+
+#intro {
+  height: 100vh;
+}
+
+#work {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: #fff;
+  height: 60px;
+
+  .heart {
+    color: rgb(175, 0, 0);
+    font-size: 1.2rem;
+  }
+
+  .coffee {
+    color: rgb(122, 61, 3);
+    font-size: 1.2rem;
+  }
+}
+
+canvas {
+  position: absolute;
+  vertical-align: bottom;
+  top: 0;
+}
+
+#particles-js {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
 }
