@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "1.0.0",
   "description": "My personal Portfolio",
-  "main": "index.js",
+  "main": "/dist/index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recusive"
   },
@@ -13,6 +13,7 @@
   "author": "Robert Venanzi",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.10.0",
+    "particles.js": "^2.0.0"
   }
 }
