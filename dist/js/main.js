@@ -4,7 +4,7 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
-
+const down = document.querySelector('.next');
 const nav = document.querySelector('#mainnav');
 const navName = document.querySelector('.nav-name')
 const btnLines = document.querySelectorAll('.btn-line')
@@ -15,6 +15,7 @@ let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
 menuNav.addEventListener('click', closeMenu);
+down.addEventListener('click', closeMenu);
 
 function toggleMenu() {
     if (!showMenu) {
@@ -55,34 +56,24 @@ function closeMenu() {
     showMenu = false;
 }
 
-// let prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//     let currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//         document.getElementById("mainnav").style.top = "0";
-//     } else {
-//         document.getElementById("mainnav").style.top = "-55px";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }
 
 window.onscroll = () => {
 
-    if (this.scrollY > 50)
-        nav.classList.add('scrolledNavbar'),
-            navName.style.color = '#000',
-            btnLines.forEach(item => item.style.backgroundColor = '#000'),
-            navIcons.forEach(item => item.style.color = '#000');
-    else
-        nav.classList.remove('scrolledNavbar'),
-            navName.style.color = '#fff',
-            btnLines.forEach(item => item.style.backgroundColor = '#fff'),
-            navIcons.forEach(item => item.style.color = '#fff');
-
+    if (this.scrollY > 50) {
+        nav.classList.add('scrolledNavbar');
+        navName.style.color = '#000';
+        btnLines.forEach(item => item.style.backgroundColor = '#000');
+        navIcons.forEach(item => item.style.color = '#000');
+    } else {
+        nav.classList.remove('scrolledNavbar');
+        navName.style.color = '#fff';
+        btnLines.forEach(item => item.style.backgroundColor = '#fff');
+        navIcons.forEach(item => item.style.color = '#fff');
+    }
 
 
 };
 
-if (showMenu) {
-    btnLines.forEach(item => item.style.backgroundColor = '#fff');
-}
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800
+});
