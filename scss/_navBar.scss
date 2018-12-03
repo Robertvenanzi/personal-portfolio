@@ -4,10 +4,8 @@
   display: float;
   padding: 0.5rem 0 0 0;
   margin: auto;
-  // position: fixed; /* Make it stick/fixed */
-  // top: 0; /* Stay on top */
-  // width: 100%; /* Full width */
-  // transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 
   .nav-name {
     float: left;
@@ -17,7 +15,6 @@
     margin-left: 3rem;
     font-family: "Bad Script", cursive;
     padding-top: 0;
-    @include easeOut;
   }
   .nav-icons {
     padding-right: 5.8em;
@@ -37,24 +34,24 @@
     right: 55px;
     top: 28px;
     cursor: pointer;
-    @include easeOut();
 
     .btn-line {
       width: 28px;
       height: 3px;
       margin: 0 0 5px 0;
       background: #fff;
-      @include easeOut;
     }
 
     // Rotate Into X With Menu Lines
     &.close {
       transform: rotate(180deg);
+
       .btn-line {
         // Line 1 - Rotate
         &:nth-child(1) {
-          transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(9px, 9px);
           background: #fff !important;
+          @include easeIn;
         }
         // Line 2 - Hide
         &:nth-child(2) {
@@ -62,8 +59,9 @@
         }
         //line 3 - Rotate
         &:nth-child(3) {
-          transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(2px, -2px);
           background: #fff !important;
+          @include easeIn;
         }
       }
     }
@@ -76,4 +74,30 @@
   transition: 0.6s all;
   height: 70px;
   color: #000;
+
+  .fab:hover,
+  .fas:hover {
+    color: rgb(172, 172, 172);
+    @include easeOut;
+  }
+
+  .menu-btn:hover {
+    .btn-line {
+      background: rgb(172, 172, 172) !important;
+      @include easeOut;
+    }
+  }
+}
+
+.fab:hover,
+.fas:hover {
+  color: rgb(209, 209, 209);
+  @include easeOut;
+}
+
+.menu-btn:hover {
+  .btn-line {
+    background: rgb(209, 209, 209) !important;
+    @include easeOut;
+  }
 }

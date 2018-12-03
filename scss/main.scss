@@ -1,6 +1,7 @@
 @import "config";
 @import "menu";
 @import "navBar";
+@import "top";
 
 * {
   box-sizing: border-box;
@@ -38,15 +39,25 @@ main {
   color: white;
 }
 
-h1.title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  width: 100%;
+section {
   text-align: center;
-  padding-top: 25vh;
-  margin: 0;
+  padding: 1rem 4rem;
 }
+
+span {
+  color: rgba(3, 103, 234, 0.949);
+}
+
 #home {
+  h1.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    padding-top: 35vh;
+    margin: 0;
+  }
+
   .qoute {
     display: block;
     text-align: center;
@@ -64,33 +75,104 @@ h1.title {
     font-size: 1rem;
     font-weight: 700;
     text-align: right;
+    color: #fff;
   }
 
   .next {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    left: 1%;
+    right: 1%;
     z-index: 2;
   }
 }
 
 #intro {
-  height: 100vh;
+  height: 100%;
+  margin-bottom: 75px;
+  .about-header {
+    font-size: 3rem;
+    padding-top: 10vh;
+  }
+  .about {
+    font-size: 1.4rem;
+    color: #666;
+  }
+  .skills-header {
+    padding-top: 5rem;
+    font-size: 2.5rem;
+  }
+  .skills {
+    text-align: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    .row {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      text-align: left;
+      margin: 0;
+    }
+  }
 }
 
 #work {
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 100px;
+  background: #fff;
+  .lg-heading {
+    font-size: 3rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+      width: 100%;
+
+      &:hover {
+        opacity: 0.5;
+        @include easeOut;
+      }
+    }
+    .btn-light,
+    .btn-dark {
+      color: black;
+    }
+    .btn-light {
+      float: right;
+      padding-right: 1.4rem;
+    }
+    .btn-dark {
+      float: left;
+      padding-left: 1.4rem;
+    }
+  }
 }
 
 #contact {
-  height: 100vh;
+  height: 100%;
 }
 
 footer {
   position: absolute;
   width: 100%;
   text-align: center;
-  padding: 1rem;
-  background: darken(#607d8b, 10);
+  padding: 100px 30px 60px 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(244, 245, 246),
+    rgb(244, 245, 246),
+    rgb(197, 220, 243),
+    rgb(143, 178, 224),
+    rgb(77, 142, 226),
+    rgb(3, 103, 234)
+  );
   color: #fff;
   height: 60px;
 
@@ -117,3 +199,5 @@ canvas {
   width: 100%;
   height: 100vh;
 }
+
+@import "mobile";

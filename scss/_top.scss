@@ -1,0 +1,43 @@
+.cd-top {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  padding-top: 2px;
+  background: rgb(128, 128, 128);
+  text-align: center;
+  bottom: 15px;
+  right: 10px;
+  font-size: 1.3rem;
+  position: fixed;
+  visibility: hidden;
+  color: white;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s,
+    background-color 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s, background-color 0.3s 0s;
+}
+
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s,
+    background-color 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s, background-color 0.3s 0s;
+}
+
+.cd-top.cd-top--show {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-top--fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: 0.5;
+}
+.cd-top:hover {
+  background-color: rgba(53, 53, 53, 0.949);
+  opacity: 1;
+}
