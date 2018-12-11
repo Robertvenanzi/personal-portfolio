@@ -98,23 +98,28 @@ span {
     font-size: 1.4rem;
     color: #666;
   }
-  .skills-header {
+  .skill-header {
     padding-top: 5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .skills {
     text-align: center;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
-
-    .row {
-      text-align: center;
+    .skill-header,
+    .col {
+      align-items: center;
+      margin: 0 auto;
     }
     ul {
       list-style: none;
       text-align: left;
-      margin: 0;
+
+      li {
+        padding-bottom: 0.2rem;
+        font-size: 1.5rem;
+      }
     }
   }
 }

@@ -8,6 +8,11 @@
 }
 // Desktops & Laptops
 @include mediaLg {
+  #intro {
+    .skills {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   #work {
     .projects {
       grid-template-columns: repeat(3, 1fr);
@@ -16,6 +21,16 @@
 }
 // Tablets & Small Laptops
 @include mediaMd {
+  #intro {
+    .skills {
+      grid-template-columns: repeat(1, 1fr);
+      .col,
+      .skill-header {
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
   #work {
     .projects {
       grid-template-columns: repeat(2, 1fr);
@@ -24,6 +39,11 @@
 }
 // Smartphones
 @include mediaSm {
+  #intro {
+    .skills {
+      grid-template-columns: 1fr;
+    }
+  }
   #work {
     .projects {
       grid-template-columns: 1fr;
