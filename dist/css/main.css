@@ -248,20 +248,24 @@ span {
   #intro .about {
     font-size: 1.4rem;
     color: #666; }
-  #intro .skills-header {
+  #intro .skill-header {
     padding-top: 5rem;
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   #intro .skills {
     text-align: center;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr); }
-    #intro .skills .row {
-      text-align: center; }
+    #intro .skills .skill-header,
+    #intro .skills .col {
+      align-items: center;
+      margin: 0 auto; }
     #intro .skills ul {
       list-style: none;
-      text-align: left;
-      margin: 0; }
+      text-align: left; }
+      #intro .skills ul li {
+        padding-bottom: 0.2rem;
+        font-size: 1.5rem; }
 
 #work {
   height: 100%;
@@ -322,13 +326,23 @@ canvas {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (mmin-width: 769px) and (max-width: 1170px) {
+  #intro .skills {
+    grid-template-columns: repeat(3, 1fr); }
   #work .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
+  #intro .skills {
+    grid-template-columns: repeat(1, 1fr); }
+    #intro .skills .col,
+    #intro .skills .skill-header {
+      align-items: center;
+      margin: 0 auto; }
   #work .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  #intro .skills {
+    grid-template-columns: 1fr; }
   #work .projects {
     grid-template-columns: 1fr; } }
