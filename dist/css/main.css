@@ -248,8 +248,11 @@ span {
   #intro .about {
     font-size: 1.4rem;
     color: #666; }
+  #intro .skills-header {
+    padding-top: 2rem;
+    font-size: 3rem; }
   #intro .skill-header {
-    padding-top: 5rem;
+    padding-top: 1rem;
     font-size: 2rem; }
   #intro .skills {
     text-align: center;
@@ -338,8 +341,8 @@ canvas {
     #intro .skills .skill-header {
       align-items: center;
       margin: 0 auto; }
-    #intro .skills .col > ul:nth-child(3) {
-      color: red; }
+    #intro .skills ul.dev-tools {
+      margin-left: 2rem; }
   #work .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
