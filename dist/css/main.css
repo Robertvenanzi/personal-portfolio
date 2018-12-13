@@ -338,6 +338,8 @@ canvas {
     #intro .skills .skill-header {
       align-items: center;
       margin: 0 auto; }
+    #intro .skills .col > ul:nth-child(3) {
+      color: red; }
   #work .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
