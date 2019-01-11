@@ -1,0 +1,45 @@
+.bg-blue {
+  background: linear-gradient(
+    to right,
+    rgba(40, 194, 255, 0.95),
+    rgba(3, 103, 234, 0.949)
+  );
+}
+
+#work {
+  height: 100%;
+  padding-top: 20vh;
+  padding-bottom: 30vh;
+  background: #fff;
+  .lg-heading {
+    font-size: 3rem;
+  }
+
+  .project {
+    display: grid;
+    grid-gap: 1.7rem;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        opacity: 0.5;
+        @include easeOut;
+      }
+    }
+    .btn-light,
+    .btn-dark {
+      color: black;
+    }
+    .btn-light {
+      float: right;
+      padding-right: 1.4rem;
+    }
+    .btn-dark {
+      float: left;
+      padding-left: 1.4rem;
+    }
+  }
+}
