@@ -175,6 +175,36 @@
   background-color: rgba(53, 53, 53, 0.949);
   opacity: 1; }
 
+.bg-blue {
+  background: linear-gradient(to right, rgba(40, 194, 255, 0.95), rgba(3, 103, 234, 0.949)); }
+
+#work {
+  height: 100%;
+  padding-top: 20vh;
+  padding-bottom: 30vh;
+  background: #fff; }
+  #work .lg-heading {
+    font-size: 3rem; }
+  #work .project {
+    display: grid;
+    grid-gap: 1.7rem;
+    grid-template-columns: 350px 350px;
+    justify-content: center; }
+    #work .project img {
+      width: 100%; }
+      #work .project img:hover {
+        opacity: 0.5;
+        transition: all 0.5s ease-out; }
+    #work .project .btn-light,
+    #work .project .btn-dark {
+      color: black; }
+    #work .project .btn-light {
+      float: right;
+      padding-right: 1.4rem; }
+    #work .project .btn-dark {
+      float: left;
+      padding-left: 1.4rem; }
+
 * {
   box-sizing: border-box; }
 
