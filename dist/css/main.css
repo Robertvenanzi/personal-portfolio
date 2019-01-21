@@ -418,10 +418,14 @@ canvas {
     #intro .skills ul.dev-tools {
       margin-left: 2rem; }
   #work .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #work .project {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   #intro .skills {
     grid-template-columns: 1fr; }
   #work .projects {
+    grid-template-columns: 1fr; }
+  #work .project {
     grid-template-columns: 1fr; } }
