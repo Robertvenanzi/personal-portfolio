@@ -1,2 +1,6 @@
 # Redirect default Netlify subdomain to primary domain
 http://peaceful-bhaskara-be8732.netlify.com/* http://www.robertvenanzi.io/:splat 301!
+/#home              /
+/#intro             /intro
+/#work              /work
+/#contact           /contact
